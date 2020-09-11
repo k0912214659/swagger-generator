@@ -1,17 +1,15 @@
-### Express Swagger Generator
+### Swagger Generator
 
 #### Installation
 
 ```
-npm i express-swagger-generator --save-dev
+npm i @mtfos/swagger-generator
 ```
 
 #### Usage
 
 ```
-const express = require('express');
-const app = express();
-const expressSwagger = require('express-swagger-generator')(app);
+const swaggerDoc = require('@mtfos/swagger-generator');
 
 let options = {
     swaggerDefinition: {
@@ -39,11 +37,11 @@ let options = {
     basedir: __dirname, //app absolute path
     files: ['./routes/**/*.js'] //Path to the API handle folder
 };
-expressSwagger(options)
-app.listen(3000);
-```
 
-Open http://<app_host>:<app_port>/api-docs in your browser to view the documentation.
+swaggerDoc(options).then(spec => {
+  console.log(spec);
+})
+```
 
 #### How to document the API
 
