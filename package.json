@@ -1,6 +1,6 @@
 {
   "name": "@mtfos/swagger-generator",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Generates swagger doc",
   "main": "index.js",
   "scripts": {},
@@ -23,7 +23,6 @@
     "recursive-iterator": "^3.3.0"
   },
   "devDependencies": {
-    "mocha": "^3.2.0",
     "standard": "^12.0.1"
   }
 }
