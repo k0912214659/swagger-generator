@@ -48,6 +48,7 @@ swaggerDoc(options).then(spec => {
 ```
 /**
  * This function comment is parsed by doctrine
+ * @swagger
  * @route GET /api
  * @group foo - Operations about user
  * @param {string} email.query.required - username or email - eg: user@domain
@@ -62,6 +63,7 @@ For model definitions:
 
 ```
 /**
+ * @swagger
  * @typedef Product
  * @property {integer} id
  * @property {string} name.required - Some description for product
@@ -69,6 +71,7 @@ For model definitions:
  */
 
 /**
+ * @swagger
  * @typedef Point
  * @property {integer} x.required
  * @property {integer} y.required - Some description for point - eg: 1234
@@ -77,11 +80,13 @@ For model definitions:
  */
 
 /**
+ * @swagger
  * @typedef Error
  * @property {string} code.required
  */
 
 /**
+ * @swagger
  * @typedef Response
  * @property {[integer]} code
  */
@@ -90,6 +95,7 @@ For model definitions:
 /**
  * This function comment is parsed by doctrine
  * sdfkjsldfkj
+ * @swagger
  * @route POST /users
  * @param {Point.model} point.body.required - the new point
  * @group foo - Operations about user
